@@ -2,7 +2,7 @@
 
 I have codes that are under development while also being used across multiple local projects that use custom environments (e.g. specified with `conda`).
  - I don't want to make copies of the code
- - appending paths through `sys.path.append()` is cumbersome, and will have to be cleaned up if I'm sharing my code. 
+ - appending paths through `sys.path.append()` is cumbersome, and will have to be cleaned up eventually if I'm sharing my code
 
  Using `pip` to install codes as a package locally is a clean solution. It also promotes better practices for eventually releasing codes. This repository is a minimal package showing how to structure code, write the setup file and complete the installation with pip in any local environment:
  
