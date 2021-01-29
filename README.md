@@ -67,3 +67,5 @@ pip install -e .
 Installation performed in this manner includes symbolic links to the files. 
  - 🛠 Changes to any `minpypack` source files are immediately available in all environments it is installed.
  - ⚠️ If `minpypack` folder is moved after installation, you will have to reinstall it. 
+
+[`pip` also provides an easy way to install remote repositories]((https://pip.pypa.io/en/stable/reference/pip_install/)) e.g. private github repositories you have access to.
