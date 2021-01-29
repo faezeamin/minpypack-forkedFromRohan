@@ -40,18 +40,22 @@ from SomeModule import *
 
 Accordingly for our project:
 
+🚫 This fails: 
 ```python
-#This fails because B is not a module, but a package:
-import minpypack.B as b
-b.B_file.main() 
+#Fails because B is not a module, but a package:
+import minpypack.B as bb
+bb.B_file.main() 
+```
 
-#This works because B_file is a module with function main:
-import minpypack.B.B_file as b
-b.main() 
+✅ These work:
+```python
+#Works because B_file is a module with function main:
+import minpypack.B.B_file as bb
+bpack.main() 
 
-#This works because C is a module with function BfromC
-import minpypack.C as C
-C.BfromC()
+#Works because C is a module with function BfromC
+import minpypack.C as cc
+cc.BfromC()
 ```
 
 
@@ -61,5 +65,5 @@ pip install -e .
 ```
 
 Installation performed in this manner includes symbolic links to the files. 
- - 🛠 Changes to any `minpypack` source files of immediately available in any environment `minpypack` is installed in.
+ - 🛠 Changes to any `minpypack` source files are immediately available in all environments it is installed.
  - ⚠️ If `minpypack` folder is moved after installation, you will have to reinstall it. 
