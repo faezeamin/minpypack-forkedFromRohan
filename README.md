@@ -1,10 +1,10 @@
 ## Minimal python packaging for local development
 
-I have codes that are being developed themselves, while also being used across multiple local projects.
+I have codes that are under development while also being used across multiple local projects that use custom environments (e.g. specified with `conda`).
  - I don't want to make copies of the code
- - appending paths through sys.path is cumbersome, and will have to be cleaned up if I'm sharing my code. 
+ - appending paths through `sys.path.append()` is cumbersome, and will have to be cleaned up if I'm sharing my code. 
 
- Using pip to install codes as a package locally is a clean solution, that also promotes better practices for eventually releasing all codes. This repository provides a template to understand the steps:
+ Using `pip` to install codes as a package locally is a clean solution. It also promotes better practices for eventually releasing codes. This repository is a minimal package showing how to structure code, write the setup file and complete the installation with pip in any local environment:
  
 The parent `minpypack` directory contains a subfolder with the same name that contains all codes to use in multiple environments. The `setup.py` file contains installation instructions used by `pip`.
 
@@ -53,7 +53,6 @@ b.main()
 import minpypack.C as C
 C.BfromC()
 ```
-
 
 
 Navigate to where the `setup.py` file is located. Install `minpypack` into current environment:
