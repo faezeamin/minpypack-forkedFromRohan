@@ -28,7 +28,7 @@ Some terminology:
  - `A` and `B` are (sub) packages (because they contain the `__init__.py` file).
  - `A_file.py`, `B_file.py`, `C.py` are modules - i.e. `.py` files containing functions and classes. 
 
-⚠️ Only modules or functions inside can be imported [(explanation)](https://bytebaker.com/2008/07/30/python-namespaces/).
+⚠️ Only modules or the functions, classes inside of them can be imported [(explanation)](https://bytebaker.com/2008/07/30/python-namespaces/).
 
 ```python
 #Valid ways of importing:
