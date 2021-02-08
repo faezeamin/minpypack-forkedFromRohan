@@ -68,4 +68,17 @@ Installation performed in this manner includes symbolic links to the files.
  - 🛠 Changes to any `minpypack` source files are immediately available in all environments it is installed.
  - ⚠️ If `minpypack` folder is moved after installation, you will have to reinstall it. 
 
-[`pip` also provides an easy way to install remote repositories]((https://pip.pypa.io/en/stable/reference/pip_install/)) e.g. private github repositories you have access to.
+### Installing remote repositories
+> [`pip` also provides an easy way to install remote repositories]((https://pip.pypa.io/en/stable/reference/pip_install/)), including private github repositories you have access to.
+
+Below is an example to create a new conda environment and install `minpypack` as a package without explicitly cloning with git:
+```bash
+#Create a new conda environment with python 3.8
+conda create -n demoenv
+conda activate demoenv
+conda install python==3.8
+
+#Install minpypack into this environment directly from github:
+pip install git+https://github.com/rhngla/minpypack
+```
+
