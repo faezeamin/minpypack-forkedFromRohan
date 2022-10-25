@@ -6,7 +6,7 @@ I have codes that are under development while also being used across multiple lo
 
  Using `pip` to install codes as a package locally is a clean solution. It also promotes better practices for eventually releasing codes. This repository is a minimal package showing how to structure code, write the setup file and complete the installation with pip in any local environment:
  
-The parent `minpypack` directory contains a subfolder with the same name that contains all codes to use in multiple environments. The `setup.py` file contains installation instructions used by `pip`.
+The parent `minpypack` directory contains a subfolder with the same name that contains all codes to use in multiple environments. The `setup.py` file contains installation instructions used by `pip`. For reference, this is the [flat-layout packaging style](https://setuptools.pypa.io/en/latest/userguide/package_discovery.html#flat-layout)
 
 ```bash
 #minpypack directory structure:
