@@ -9,6 +9,7 @@ def main():
     print(f'working directory absolute: {Path(__file__).absolute()}')
     print(f'working directory cwd: {Path.cwd()}')
     print("=====================================")
+    # print('This is a change in the C.py module')
 
 
 def BfromC():
@@ -18,3 +19,5 @@ def BfromC():
 
 if __name__ == "__main__":
     main()
+
+print('This is a change in the C.py module')
